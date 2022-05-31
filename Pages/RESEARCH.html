@@ -1,0 +1,265 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESEARCH</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../JS/script.js"></script>
+
+
+    <style>
+
+      /* Styling container */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        margin-bottom: 100px;
+        flex-direction: column;
+      }
+
+      /* Styling heading main */
+      .heading_main {
+        text-align: center;
+        font-size: 50px;
+        margin: 70px 0;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: rgb(39, 39, 39);
+        transition: color 400ms;
+        cursor: pointer;
+      }
+
+      /* Styling research container */
+      .research_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      /* Styling heading */
+      .heading {
+        font-size: 25px;
+        margin: 50px; 0px; 40px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: rgb(39, 39, 39);
+        transition: color 400ms;
+        cursor: pointer; 
+      }
+
+      /* Styling research image container */
+      .research_image_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .research_image_container img {
+        height: 100%;
+        width: 500px;
+        margin: 40px;
+        
+      }
+      /* Adding padding */
+      .research_text_container {
+        padding: 20px;
+      }
+
+      .research_text_container p {
+        font-size: 18px;
+        line-height: 25px;
+        color: rgb(39, 39, 39);
+        margin-bottom: 70px;
+      }
+
+    </style>
+   
+  </head>
+  
+  <body onload="displayTime()">
+
+    <!-- Creating wrapper-->
+    <div style="background-color:#ffffff; width: 100%; height: 3700px;">
+
+      <!--Providing header tag-->
+      <header style="background-color: #000000; width: 100%; height: 60px;">
+        
+        <!--Providing navigation bar-->
+        <nav>
+
+          <!--Div for logo container-->
+          <div class="logo_container">
+            <img src="../Images/logo.png" alt="logo">
+          </div>
+
+        
+          <div>
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="CV.html">CV</a></li>
+              <li><a href="BLOGS.html">BLOG</a></li>
+              <li><a href="RESEARCH.html">RESEARCH</a></li>
+              <li><a href="CONTACT US.html">CONTACT US</a></li>
+            </ul>
+          </div>  
+        
+        </nav>  
+      
+      </header>
+
+      <!--Creating main container-->
+      <main class="container">
+        <h1 class="heading_main">Research</h1>
+
+        <!--Creating div for clock-->
+            <div id = "MyClockDisplay" class="clock"></div>
+     
+        
+        <div class="research_container">
+          <h1 class="heading">Comparing navigationbar</h1>
+          
+          <div class="research_image_container">
+           
+            <!-- First image for comparision -->
+            <img src= " ../Images/navown.png" alt="navown" />
+            
+            <!-- Second image for comparision -->
+            <img src="../Images/navother.png" alt="navother" onclick="window.open('http://www.mrbottles.com')" alt="navown" />
+          
+          </div>
+
+          <!-- Comparision text -->
+          <div class="research_text_container">
+            <p>
+              The image of navigation bar taken from HOME page is shown on the left side and image of navigation bar taken from mrbottle website is shown on the right side. In navbar of mrbottle website, fonts are coded in cursive style on the other hand, fonts of navbar HOME page are in normal style. Here, hover effects can be seen in both navbar. However, hover effect in left side image is easily noticeable whereas on the other side it is somewhat less visible.
+            </p>
+           
+          </div>
+        </div>
+         
+        <div class="research_container">
+          <h1 class="heading">Comparing  body content.</h1>
+          
+          <div class="research_image_container">
+            
+            <!-- First image for comparision -->
+            <img src="../Images/bodyown.png" alt="own"/>
+            
+            <!-- Second image for comparision -->
+            <img src="../Images/bodyother.png" alt="other" onclick="window.open('http://www2.pnwx.com')"  />
+          
+          </div>
+          
+          <div class="research_text_container">
+            <!-- Comparision text -->
+            <p>
+              The image shown on the left side of page displays the body content extracted from page BLOGS while on ther side is image of body content extracted from website named pnwx. The body contet of left side's image is kept clean  and simple from designing aspect. Contents are clearly visible and have appealing look. On ther hand, body content of right sides's image seems quite dull from designing expect. Unnecessary colour combintion has been used making contents hard to read.
+            </p>
+           
+          </div>
+        </div>
+
+        <div class="research_container">
+          <h1 class="heading">Comparing  JS content</h1>
+          
+          <div class="research_image_container">
+            
+            <!-- First image for comparision -->
+            <img src="../Images/Timeown.png" alt="Timeown"/>
+            
+            <!-- Second Image for comparision -->
+            <img src="../Images/Timeother.png" alt="timeother" onclick="window.open('https://www.timeanddate.com/clocks/free.html')"  />
+          
+          </div>
+
+          <div class="research_text_container">
+            <!-- Comparision text -->
+            <p>
+               In this section, designing of JS has been compared. The first image has displayed time just below the starting image using JavaScript which is kept simple providing slight margin. No date has been displayed there. On the other hand, second image is extracted from website named time and date. It has displayed time as well as date. The date is shown on the top left corner in a vertical direction, highlighted using CSS. Likewise Time is shown inside box at bottom which is made clickable.
+            </p>
+           
+          </div>
+        </div>
+          
+        <div class="research_container">
+          <h1 class="heading">Comparing  CONTACT page</h1>
+
+          <div class="research_image_container">
+            
+            <!-- First image for comparision -->
+            <img src="../Images/contactown.png" alt="own"/>
+            
+            <!-- Second Image for comparision -->
+            <img src="../Images/contactother.png" alt="footerother" onclick="window.open('https://www.pixpa.com/contact-us')"  />
+          
+          </div>
+          
+          <div class="research_text_container">
+            <!-- Comparision text -->
+            <p>
+              The image presented at left side is image of contact extracted from internal webpage named CONTACT US and the image on the right side is extracted from external website named pixpa. Although design of both page looks quite same but the diffence still occurs here. A box can be seen with messag "I'm not robot" along with checkbox while there is no box with such message in my page. There are two buttons named get started and submit one on the top while another is below.However, there is only on send button where no css propertyv is used. 
+            </p>
+           
+          </div>
+        </div>
+
+        <div class="research_container">
+          <h1 class="heading">Comparing  footer content</h1>
+
+          <div class="research_image_container">
+            
+            <!-- First image for comparision -->
+            <img src="../Images/footerown.png" alt="own"/>
+            
+            <!-- Second Image for comparision -->
+            <img src="../Images/footerother.png" alt="footerother" onclick="window.open('https://claritymoney.com/en/')"  />
+          
+          </div>
+          
+          <div class="research_text_container">
+            <!-- Comparision text -->
+            <p>
+              Footer image presented at right side is extracted from website named clarity money and have shown icons of facebook, instagram and skype. Links are also displayed. However, image on the left side have kept it quite simple. Hover effects are implented there along with copyright icon.Links of other internal pages are also displayed 
+            </p>
+           
+          </div>
+        </div>
+        
+      </main>
+      <!-- Footer -->
+      <footer style="background-color: #000000;" >
+          <!-- Wrapping inner divs-->
+          <div>
+            <div>
+              <!--Providing internal links to respective pages-->
+              <ul>
+                <li><a href="../index.html">HOME</a></li>
+                  <li><a href="CV.html">CV</a></li>
+                  <li><a href="BLOGS.html">BLOGS</a></li>
+                  <li><a href="RESEARCH.html">RESEARCH</a></li>
+                  <li><a href="CONTACT US.html">CONTACT US</a></li>
+              </ul>
+            </div>
+              
+            <div>
+              <p style="color: #ffffff; text-align: center; font-size: 20px; font-weight: bold; ">
+              &copy; Pasang Tamang All right reserved
+              </p>
+            </div>
+          </div>
+          <!--Ending of wrapping inner divs-->
+        </footer>
+        <!--Ending of footer tag-->
+        
+      </div>
+      <!--Ending of main wrapper-->
+  </body>
+</html>

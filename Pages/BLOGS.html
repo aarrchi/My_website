@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../JS/script.js"></script>
+
+    <style>
+
+      /* Styling blogs container */
+      .blogs_container {
+        max-width: 1200px;
+        margin: 30px auto;
+        display: grid;
+        /* giving equal space to each column/div in ourcase */
+        grid-template-columns:1fr;
+        grid-template-rows: auto;
+        gap: 70px;
+      }          
+
+      /* Styling blog container */
+      .blog_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }    
+      
+      /* Styling class slider */
+      .slider{
+        max-width: 1000px;
+        height: 650px;
+        margin: 40px auto;
+        /* Hiding overflow */
+        overflow: hidden;
+        box-shadow: 5px 5px 10px grey;
+      }
+
+      /* Setting height and width */
+      img{
+        width: 100%;
+        height: 100%
+      }    
+
+      .blog_image_container > img {
+        width: 300px;
+        height: 200px;
+      }       
+        
+      /* Styling blog content container */
+      .blog_content_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+      }
+
+      .blog_title_container > h1 {
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: rgb(39, 39, 39);
+        transition: color 400ms;
+        cursor: pointer;
+      }
+      
+      /* Styling fontsize */
+      p{
+        font-size: 17px;
+
+      }
+
+      /* Title will be in red color */
+      .blog_title_container > h1:hover {
+        color: red;
+      }
+
+      /* Styling unordered list of class impact */
+      .impact ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Styling list of unordered list from class impact */
+      .impact ul li {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(59, 59, 59);
+        line-height: 22px;
+      }
+
+      /* Appending arrow before content  */
+      .impact ul li::before {
+        content: "→";
+        padding-right: 5px;
+      }
+
+    </style>
+  
+  </head>
+  
+  <body onload="displayTime()">
+
+    <!-- Creating wrapper-->
+    <div style="background-color:#ffffff; width: 100%; height:3025px;">
+
+      <!--Providing header tag-->
+      <header style="background-color: #000000; width: 100%; height: 60px;">
+        
+        <!--Providing navigation bar-->
+        <nav>
+
+          <!--Logo container div-->
+          <div class="logo_container">
+            
+            <img src="../Images/logo.png" alt="logo">
+          
+          </div>
+
+          <div>
+            
+            <ul>
+              
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="CV.html">CV</a></li>
+              <li><a href="BLOGS.html">BLOG</a></li>
+              <li><a href="RESEARCH.html">RESEARCH</a></li>
+              <li><a href="CONTACT US.html">CONTACT US</a></li>
+            
+            </ul>
+         
+          </div>  
+        
+        </nav>  
+      
+      </header>
+      
+      <!-- Main wrapper for blogs -->
+      <main class="blogs_container">
+
+
+        <div class="slider">
+          <!--Div for first image-->
+          <div id="img">
+             <img src=" ../Images/computer.jpeg">
+          </div>
+
+          <!--Creating div for clock-->
+        <div id = "MyClockDisplay" class="clock"></div>
+        
+        </div>
+
+        <!--Adding JavaScript-->
+        <script>
+
+          //Initializing
+          var images = ['../Images/mask.jpeg','../Images/seo.jpeg','../Images/computer.jpeg'];
+          var x = 0;
+          var imgs = document.getElementById('img');
+          setInterval(slider, 2000);
+
+          //Function to slide
+          function slider(){
+
+            //Logic
+            if (x < images.length) {
+              x = x + 1;
+            } else {
+              x = 1;
+            }
+
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            
+          }
+
+        </script>
+
+
+        <h1 style="text-align: center;font-size: 40px;">Types of Technology</h1>
+         
+        <!-- Individual blog wrapper -->
+        <div class="blog_container">
+          
+          <!-- Image div -->
+          <div class="blog_image_container">
+            <img src="../Images/IT.jpg" alt="edu" />
+          </div>
+          
+          <div class="blog_content_container">
+           
+            <!-- Title div -->
+            <div class="blog_title_container">
+              <h1>Information Technology</h1>
+              <p>Oct 27, 2020 | Author: Dale Stokdyk</p>
+            </div>
+            <br>
+
+             <!-- Content div -->
+            <div class="blog_text_container">
+             
+              <p>
+                Information technology is furiosly growing industry in today's world.It refers to the any kind of technology that is used for the purpose of sharing and gaining information about certain things.Technologies like computer, television, smartphones,, radio are some of its kind. However, in companies, business field, computer is consiredered as the ultimate technology used for maintaining information.This kind of technology is used for processing and maintianig data overload, management of database, providing safety to data, storing and retrieving information etc.
+              </p>
+            
+            </div>
+          
+          </div>
+        
+        </div>
+        
+        <!-- Individual blog wrapper -->
+        <div class="blog_container">
+          
+          <!-- Image div -->
+          <div class="blog_image_container">
+            <img src="../Images/edu.png" alt="edu" />
+          </div>
+          
+          <div class="blog_content_container">
+            
+            <!-- Title div -->
+            <div class="blog_title_container">
+              <h1>Educational Technology</h1>
+              <p>June 4, 2019 |  WhatchaWearing</p>
+            </div>
+            <br>
+            
+            <!-- Content div -->
+            <div class="blog_text_container">
+              
+              <p>
+                Educational technology is a way of learning process using technical tools like computer, cellphone, softwares etc. It assists pupil to help them with their educational problems. It establish active learning environment as students are alredy familiar with tablets mobile gadgets. Technology resources like youtube, internet, google, wikipedia have facillitated learners to research in wide range. It aims at boosting the performance of students by managing technological resources. Likewise online learning has come out as an ultimate solution for many working student.
+              </p>
+            
+            </div>
+          
+          </div>
+        
+        </div>
+
+        <!-- Individual blog wrapper -->
+        <div class="blog_container">
+          
+          <!-- Image div -->
+          <div class="blog_image_container">
+            <img src="../Images/medical.jpg" alt="md" />
+          </div>
+          
+          <div class="blog_content_container">
+            
+            <!-- Title div -->
+            <div class="blog_title_container">
+              <h1>Medical Technology</h1>
+              <p>Oct 7, 2020 | Author: John Watson</p>
+            </div>
+            <br>
+            
+            <!-- Content div -->
+            <div class="blog_text_container">
+              
+              <p> Medical technology refers to technology in which various kinds of technical applications that have been used for saving human life, preventing from and diagnosing disease. It includes application from an x-ray machine, computers used for testing biological sampals,to ultrasounds MRI machine and human made organs.This type of technology has been proven as blessing for mankind and includes in the category of crucial technologies. Because of the advanced technology, operation, surgeries, chemo therapy, organ transplantation have become possible. Stethescope nebulizer are some of the equipments of medical technology.
+                
+              </p>
+            
+            </div>
+          
+          </div>
+        
+        </div>
+        
+        <!-- Individual blog wrapper -->
+        <div class="blog_container">
+          
+          <!-- Image div -->
+          <div class="blog_image_container">
+            <img src="../Images/communication.jpg" alt="cmt" />
+          </div>
+          
+          <div class="blog_content_container">
+            
+            <!-- Title div -->
+            <div class="blog_title_container">
+              <h1>Communication Technology</h1>
+              <p>Jan 2, 2021 | Author: Miley Cirus</p>
+            </div>
+            <br>
+            
+            <!-- Content div -->
+            <div class="blog_text_container">
+              <p>
+                Communication technology is one of the most hyped technology used in our daily life. It refers to all those tools and devices hat has been used while processing communication.The advanced growth in this technology has made possible to transfer information and communicate while staying in two different places. Consquently, making whole universe feel like a small room.In this technolgy information are transmitted through various devices like cellphone, radio, television,emails, text, fax and the internet.Business field uses this type of technology
+              </p>
+            
+            </div>
+          
+          </div>
+        
+        </div>
+            
+        <!-- Content div -->
+        <div class="blog_text_container">
+          <h1>OVERALL</h1>
+          <br>
+          <p>
+            Technology is a science application that is used in real life to facilitate human life and solve problems. It requires human knowledge and tools to work porperly. Some kinds of technology like information  technology, medical technology, educational technology and communication technology happens to be most common and crucial one for mankind.Information technology plays major role in business field for managing, storing and safeguarding data whereas techonlogy of medicine includes equipments like X-ray, microscope used for healthcare. Similarly, communications are done by means of cellphones, computers and educational technology provides platform like online learning, acting learning environment and  manymore.
+          </p>
+            
+        </div>
+          
+        <!-- Wrapper for positive and negative impact -->
+        <div class="impact_container">
+          <div class="impact">
+            <h1>Positive Impact</h1>
+            <br>
+            <ul>
+              <li>Technology allows for working remotely, which has shown to increase employee productivity</li>
+              <br>
+              <li>Connecting with the best resources regardless of their location in the world</li>
+              <br>
+              <li>Helps save time, thanks to automation of redundant tasks</li>
+              <br>
+              <li>
+                External and internal communication is quicker through emails, project management, co-working tools, and work place productivity apps</li>
+              <br>
+              <li>Technology has made medical commodities a hundred steps up to development.</li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <div class="impact" >
+            <h1>Negative Impact</h1>
+            <br>
+            <ul>
+              <li>Technology and access to information in a central location has given rise to new kinds of crimes and terrorism</li>
+              <br>
+              <li>Reliance on technology has increased social anxiety, where people are more comfortable communicating with others through messages and chat apps, but not physically</li>
+              <br>
+              <li>Nuclear weapons and weapons of mass destruction</li>
+              <br>
+              <li>Technology is expenxive which cannot be afforded by everyone</li>
+              <br>
+              <li>It has made human dependent on it.</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <br>
+      <br>
+      
+      <!--Beginning of footer tag-->
+      <footer style="background-color: #000000;" >
+        <!-- Wrapping inner divs-->
+        <div>
+          <div>
+            <!--Providing internal links to respective pages-->
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="CV.html">CV</a></li>
+              <li><a href="BLOGS.html">BLOGS</a></li>
+              <li><a href="RESEARCH.html">RESEARCH</a></li>
+              <li><a href="CONTACT US.html">CONTACT US</a></li>
+            </ul>
+          </div>
+              
+          <div>
+            <p style="color: #ffffff; text-align: center; font-size: 20px; font-weight: bold; ">
+            &copy; Pasang Tamang All right reserved
+            </p>
+          </div>
+        </div>
+        <!--Ending of wrapping inner divs-->
+      </footer>
+      <!--Ending of footer tag-->
+    </div>
+      
+  </body>
+</html>

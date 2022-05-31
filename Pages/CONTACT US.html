@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-euiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CONTACT US</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script type="text/javascript" src="../JS/script.js"></script>
+		<style>
+
+			/* Styling image container */
+			.image_container{
+				width: 100%;
+			}
+
+			/* Styling image container img */
+			.image_container img{
+				width: 100%;
+				height: 300px;
+				margin-bottom: 150px;
+			}
+
+			/* Styling main container  */
+			.main_container{
+				background-color: pink; 
+				width: 62%;
+				height: 800px;
+				margin: auto;
+				margin-bottom: 300px;
+			}
+
+			/* Styling heading container */
+			.heading_container{
+				background-color: #FAEBD7; 
+				width: 100%; 
+				height: 200px
+			}
+
+			/* Styling form container */
+			.form_container{
+				background-color: #C0C0C0; 
+				height: 680px;
+			    width: 100%; 
+			    margin-top: 0px
+			    margin-bottom: 100px;
+			}
+
+			/* Styling marginleft fontsize */
+			label{
+				margin-left: 100px;
+				font-size: 23px;
+
+			}
+			textarea{
+				margin-left: 100px;
+				margin-top: 30px;
+			}
+		</style>
+       
+	</head>
+	
+	<body onload="displayTime()">
+	
+		<!-- Creating wrapper-->
+		<div style="background-color:#ffffff; width: 100%; height: 1700px;">
+
+			<!--Providing header tag-->
+			<header style="background-color: #000000; width: 100%; height: 60px;">
+				
+				<!--Providing navigation bar-->
+				<nav>
+
+					<!--Div class  for logo container-->
+					<div class="logo_container">
+						<img src="../Images/logo.png" alt="logo">
+					</div>
+
+					<div >
+						<ul>
+							<li><a href="../index.html">HOME</a></li>
+							<li><a href="CV.html">CV</a></li>
+							<li><a href="BLOGS.html">BLOG</a></li>
+							<li><a href="RESEARCH.html">RESEARCH</a></li>
+							<li><a href="CONTACT US.html">CONTACT US</a></li>
+						</ul>
+					</div>	
+				
+				</nav>	
+			
+			</header>
+			
+			<main >
+
+				<!--Providing div for image container-->
+				<div class="image_container">
+					<img src="../Images/contact.jpg" alt="phone" width="100%" height="250">
+				</div>
+
+				<!--Creating div for clock-->
+       			<div id = "MyClockDisplay" class="clock"></div>
+     
+
+				<!--Allocating space for adding main content-->
+				<div class="main_container">
+				
+					<!-- Providing div for heading container-->
+					<div class="heading_container">
+						
+						<h1 1 style="font-size: 40px; font-weight: 20px; color: #8B0000; text-align: center;padding: 35px">CONTACT</h1>
+						<p style="font-size: 20px; margin-left: 40px">For general enquiries, questions, comments and feedback please use this handy contact form.</p>
+					
+					</div>
+
+					<!--Providing div for form container-->
+					<div class="form_container">
+
+					    <form name="messageForm" onsubmit="validateForm ()">
+					    	<br>
+					    	<br>
+
+							<label>FirstName:</label> <input type="text" name="Firstname" size="40">
+							<br>
+							<br>
+							<label>LastName:</label> <input type="text" name="Lastname" size="40">
+							<br>
+							<br>
+							<label>Email:</label> <input type="text" name="Email" placeholder="name@gmail.com" size="47" margin-left = "100">
+							<br>
+							<br>
+							<label>Gender</label>
+							<input type="radio" name="age" value="m" checked>Male
+							<input type="radio" name="age" value="f" >Female
+							<br>
+							<br>
+							<label>Message</label><br><textarea name="Message" rows="10" cols="50" placeholder="Enter Message" size="40"></textarea>
+							<br>
+							<label><input type="submit" value="Send" size="70"></label>
+							
+						</form>		
+
+					</div>
+
+				</div>
+
+				<!--Adding javascript-->
+				<script>
+
+					function validateForm() {
+						
+						//Intializing
+						var Fname = document.forms["messageForm"] ["Firstname"].value;
+						var Lname = document.forms["messageForm"] ["Lastname"].value;
+						var Email = document.forms["messageForm"] ["Email"] .value;
+						var gender = document.forms["messageForm"] ["age"].value;
+						var message = document.forms["messageForm"] ["Message"] .value;
+
+						//Adding logic
+						if (Fname == "" || Lname == "" || message == "" || Email == "") {
+							alert ("Empty fields found. please fill the form");
+						}
+						else{
+							alert ("Thank you for the feedback");
+						}
+					}
+				</script>
+
+			</main>	
+
+
+			<!--Beginning of footer tag-->
+			<footer style="background-color: #000000;" >
+				<!-- Wrapping inner divs-->
+				<div>
+					<div>
+						<!--Providing internal links to respective pages-->
+						<ul>
+							<li><a href="../index.html">HOME</a></li>
+			  				<li><a href="CV.html">CV</a></li>
+			  				<li><a href="BLOGS.html">BLOGS</a></li>
+			  				<li><a href="RESEARCH.html">RESEARCH</a></li>
+			  				<li><a href="CONTACT US.html">CONTACT US</a></li>
+						</ul>
+					</div>
+						
+					<div>
+						<p style="color: #ffffff; text-align: center; font-size: 20px; font-weight: bold; ">
+						&copy; Pasang Tamang All right reserved
+						</p>
+					</div>
+				</div>
+				<!--Ending of wrapping inner divs-->
+			</footer>
+			<!--Ending of footer tag-->
+			
+		</div>
+	</body>

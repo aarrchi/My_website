@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../JS/script.js"></script>
+
+    <style>
+      
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Displaying class container info flex column */
+      .container_info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Styling container info top */
+      .container_info_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Styling container info bottom */
+      .container_info_bottom {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      /* Styling link */
+      .link,
+
+      .container_info_bottom > p {
+        margin: 4px 0;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(46, 46, 46);
+      }
+      /* Overriding */
+      .info_container ul li{
+        margin: 0 !important;
+        
+      }
+
+      /* Appending arrow before content  */
+      .info_container ul li::before {
+        content: "→";
+        padding-right: 5px;
+        
+      }
+      
+
+    </style>
+      
+  </head>
+  
+  <body onload="displayTime()">
+
+      <!-- Creating wrapper-->
+    <div style="background-color:#ffffff; width: 100%; height: 1700px;">
+
+      <!--Providing header tag-->
+      <header style="background-color: #000000; width: 100%; height: 60px;">
+        
+        <!--Providing navigation bar-->
+        <nav>
+
+          <!--Creating div for logo container-->
+          <div class="logo_container">
+            
+            <img src="../Images/logo.png" alt="logo">
+          
+          </div>
+
+          <div>
+            
+            <!--Beginning of unordered list-->
+            <ul>
+              
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="CV.html">CV</a></li>
+              <li><a href="BLOGS.html">BLOG</a></li>
+              <li><a href="RESEARCH.html">RESEARCH</a></li>
+              <li><a href="CONTACT US.html">CONTACT US</a></li>
+            
+            </ul>
+            <!--Ending of unordered list-->
+          </div>  
+        
+        </nav>  
+      
+      </header>
+      <!--Ending of header tag-->
+
+      <!--Creating main class contianer-->  
+      <main class="container">
+
+        <!--Creating div for clock-->
+        <div id = "MyClockDisplay" class="clock"></div>
+        
+        
+        <!--Creating div for container info-->
+        <div class="container_info">
+          
+          <!-- Div containing image, name and occupation -->
+          <div class="container_info_top">
+            <img style="border-radius: 50%;width: 150px; height: 150px;object-fit: cover;margin-top: 100px;" src="../Images/pasang.jpg" alt="me" />
+            <h1 style="font-size: 35px;font-weight: 400;line-height: 50px;margin-top: 4px; margin-top: 40px;">Pasang Tamang</h1>
+            <h3 style="font-size: 20px;font-weight: 400;line-height: 31px;letter-spacing: 2px;text-transform: uppercase;font-weight: 300;margin-bottom: 10px;">Student</h3>
+          </div>
+          
+          <hr>
+
+           <!-- Div containing contact info's -->
+          <div class="container_info_bottom">
+            <a href="mailto: pasang@gmail.com" class="link">archielama957@gmail.com</a>
+            <p>Kathmandu, Nepal</p>
+            <a href="tel:912312312" class="link">(+977) 981231231</a>
+          </div>
+        
+        </div>
+        
+        <!--Div for profile container-->
+        <div class="Profile_container">
+          <h1 style="margin-top: 60px;">Profile</h1>
+          <p style="padding: 4px 0;font-size: 20px;font-weight: 300;color: rgb(46, 46, 46);line-height: 28px; margin-top: 40px;">
+            A passionate and technically fresh minded young girl having persona of desiring to deliver more than just required, with surface level knowledge in technical field. Currently pursuing my carreer from Islington college as a first year bachelor pupil enrolled in networking faculty.With advanced knowledege on computer basics, I gained from training center, I am confident in resolving technical problems. Along with this,I have acquired complementary soft skills and possess excellent teamwork qualities.
+          </p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!--Div for education container-->
+        <div class="education_container">
+          <h1>Education</h1>
+          <div class="info_container">
+
+            <ul style="margin-top: 40px; font-size: 20px; font-weight: 300px; display: flex; flex-direction: column;">
+
+              <li>Completed my school level from Bhairum Secondary school in year 2018  and GPA 3.6 </li>
+              <br>
+              <li>Completed my college level from Trinity International college with computer science background n year 2020 and scored GPA 3.57</li>
+              <br>
+              <li>Currently studying in Islington college with Networking faculty as bachelor first year student </li>
+              <br>
+              <li>Learnt basics about Computer from training center for almost 6 months.</li>
+
+            </ul>
+          
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--Div for skill container-->
+        <div class="skills_container">
+          <h1>Skills</h1>
+          <div class="info_container">
+            
+            <ul style="margin-top: 40px; font-size: 20px; font-weight: 300px; display: flex; flex-direction: column;">
+
+              <li> Basic knowledge about programming languages like Java, python, C+, C++</li>
+              <br>
+              <li>Familiar with  basic concept of operating systems (Linux, Windows, and various others), firewalls</li>
+              <br>
+              <li>Foundation of Database, SQL server, HTML </li>
+              <br>
+              <li>good communication skills, effective presentation skills ,leadership, time management</li>
+            
+            </ul>
+          
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--Div for volunteering experience-->
+        <div class="voluntering_experience_container">
+          <h1>Volunteering Experience</h1> 
+          <div class="info_container">
+            
+            <ul style="margin-top: 40px; font-size: 20px; font-weight: 300px;display: flex;flex-direction: column;">
+              
+              <li>Voluntered in Trishuli hospital during earthquake on the behalf of Redcrossin year 2016.</li>
+              <br>
+              <li>Volunteered during blood donation program held by student club in 2019 in Trinity college.</li>
+              <br>
+              <li>Voluntered for crowd management in Pashupatinath temple during Shivaratri as student club member from trinity college.</li>
+           
+            </ul>
+              
+          </div>
+        </div>
+
+      </main>
+      <br>
+      <br>
+      <br>
+      
+      <!--Beginning of footer tag-->
+      <footer style="background-color: #000000;" >
+        <!-- Wrapping inner divs-->
+        <div>
+          <div>
+            <!--Providing internal links to respective pages-->
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="BLOGS.html">BLOGS</a></li>
+                <li><a href="RESEARCH.html">RESEARCH</a></li>
+                <li><a href="CONTACT US.html">CONTACT US</a></li>
+            </ul>
+          </div>
+            
+          <div>
+            <p style="color: #ffffff; text-align: center; font-size: 20px; font-weight: bold; ">
+            &copy; Pasang Tamang All right reserved
+            </p>
+          </div>
+        </div>
+        <!--Ending of wrapping inner divs-->
+      </footer>
+      <!--Ending of footer tag-->
+    
+    </div>
+    <!--Ending of main wrapper-->
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-euiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" conte22nt="width=device-width, initial-scale=1">
+		<title>HOME</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+	    <link
+	      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+	      rel="stylesheet"
+	    />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="JS/script.js"></script>
+
+		<style>
+
+			/* Styling margin */
+			h1 {
+				margin-top: 70px;
+				margin-bottom: 50px;
+			}
+
+			/* Styling paragraph */				
+			p {
+				font-family: lato:ital;
+				font-size: 18px;
+				font-weight:normal;
+				margin-bottom: 100px;
+				margin-top: 70px;
+				margin-left: 70px;
+				margin-right: 50px;
+				text-align: justify;
+			}
+
+			/* Styling class clock */
+			.clock {
+
+				position: absolute;
+				margin-left: 40px;
+				margin-top: 40px;
+				font-size: 25px;
+			}
+
+			/* Styling class button */
+			.button {
+		        display: inline-block;
+		        padding: 10px 20px;
+		        text-align: center;
+		        text-decoration: none;
+		        color:#ffffff;
+		        background-color: #7aa8b7;
+		        border-radius: 6px;
+		        outline: none;
+	  
+	    	}
+	    	/* Hover effect color will be red*/
+	    	.button:hover{
+	    		color: red;
+	    	}
+			
+
+		</style>
+		
+	</head>
+	<body onload="displayTime()">
+		
+		<!-- Creating wrapper-->
+		<div style="background-color:#ffffff; width: 100%; height: 1900px;">
+
+			<!--Providing header tag-->
+			<header style="background-color: #000000; width: 100%; height: 60px;">
+				
+				<!--Providing navigation bar-->
+				<nav>
+
+					<!--Creating div for logo container-->
+					<div class="logo_container">
+
+						<img src="Images/logo.png" alt="logo">
+
+					</div>
+
+					
+					<div>
+						<!--Beginning of unordered list-->
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="pages/CV.html">CV</a></li>
+							<li><a href="pages/BLOGS.html">BLOG</a></li>
+							<li><a href="pages/RESEARCH.html">RESEARCH</a></li>
+							<li><a href="pages/CONTACT US.html">CONTACT US</a></li>
+						</ul>
+						<!--Ending of unordered list-->
+					</div>
+				
+				</nav>	
+			
+			</header>
+			
+			<!--Providing main tag-->
+			<main>
+
+				<!-- Creating div for container-->
+				<div class="container">
+					
+					<img src="Images/home.jpg" alt="header" width="100%" height="410">
+				
+				</div>
+
+				<!--Creating div for clock-->
+				<div id = "MyClockDisplay" class="clock"></div>
+				
+
+				<!--Using table tag-->
+				<table width="100%">
+					<tr>
+						<th>
+							<!--Creating section for CV-->
+							<section>
+
+								<h1>CV</h1>
+								<img src="Images/image4.jpg" alt="anaconda" width="275" height="275">
+								<br>
+								<!--providing internal link of CV-->
+								<a href="pages/CV.html" class="button">Click here</a> 
+								<p>This section includes brief introduction part, where personality is displyaed clearly, background of education, skills acquired, volunteering experience and all the cerificates, awards or achievements I've got so far. This section mirrors my personality along with detail information. I have also added my picture here.</p>
+				
+							</section>
+						
+						</th>
+
+						<th>
+							<!--Creating section for BLOGS-->
+							<section>
+
+								<h1>BLOGS</h1>
+								<img src="Images/image5.jpg" alt="cat" width="275" height="275">
+								<br>
+								<!--Providing internal link of BLOGS-->
+								<a href="pages/BLOGS.html" class="button">Click here</a>
+								<p>In this page, brief introduction about technology is presented. Likewise, various kind of technologies are described in detail along with their images. Impacts of technology, whether it is positive or negative is also displayed on the screen.</p>
+								
+							</section>
+						
+						</th>
+						
+					</tr>
+					
+					<tr>
+						<th>
+							<!--Creating section for RESEARCH-->
+							<section>
+
+								<h1>RESEARCH</h1>
+								<img src="Images/image6.jpg" alt="meow" width="275" height="275" margin-bottom=500px>
+								<br>
+								<!--Providing internal link of RESEARCH-->
+								<a href="pages/RESEARCH.html" class="button">Click here</a>
+								<p>Reserch section includes comparison between website created and other five otherwebsites named as w3schools etc. Features of five other websites are compared with this website's feature.</p>
+									
+							</section>
+							
+						</th>
+							
+						<th>
+							<!--Creating section for CONTACT US-->
+							<section>
+
+								<h1>CONTACT US</h1>
+								<img src="Images/image7.jpg" alt="howl" width="275" height="275" margin-bottom=500x; >
+								<br>
+								<!--Providing internal link of CONTACT US-->
+								<a href="pages/CONTACT US.html" class="button">Click here</a>
+								<p>It includes all the contact information or details through which each user can contact. It also includes validation form.</p>
+								
+							</section>
+							
+						</th>
+					</tr>
+				</table>
+			</main>	
+
+			<!--Beginning of footer tag-->
+			<footer style="background-color: #000000;" >
+				<!-- Wrapping inner divs-->
+				<div>
+					<div>
+						<!--Providing internal links to respective pages-->
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+			  				<li><a href="pages/CV.html">CV</a></li>
+			  				<li><a href="pages/BLOGS.html">BLOGS</a></li>
+			  				<li><a href="pages/RESEARCH.html">RESEARCH</a></li>
+			  				<li><a href="pages/CONTACT US.html">CONTACT US</a></li>
+						</ul>
+					</div>
+						
+					<div>
+						<p style="color: #ffffff; text-align: center; font-size: 20px; font-weight: bold; ">
+						&copy; Pasang Tamang All right reserved
+						</p>
+					</div>
+				</div>
+				<!--Ending of wrapping inner divs-->
+			</footer>
+			<!--Ending of footer tag-->
+			
+		</div>
+		<!--Ending of main wrapper-->
+	</body>
+</html>
